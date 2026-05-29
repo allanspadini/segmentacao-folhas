@@ -4,6 +4,12 @@ from PIL import Image
 from transformers import pipeline
 import io
 import time
+import os
+from dotenv import load_dotenv, find_dotenv
+
+# Carrega o token do Hugging Face para chamadas autenticadas
+load_dotenv(find_dotenv())
+
 
 # Set premium page configuration
 st.set_page_config(
